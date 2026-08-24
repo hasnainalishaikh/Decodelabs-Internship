@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Studio — Modern Digital Agency & Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header (logo only — navigation lives in the floating navbar) -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">NOVA <span>STUDIO</span></a>
+        </div>
+    </header>
+
+    <!-- Floating Navbar -->
+    <nav class="floating-navbar" id="floatingNavbar" aria-label="Primary">
+        <a href="index.html" class="nav-item active" aria-current="page"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+        <a href="contact.html" class="nav-item nav-item-cta">Let's Talk</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="container hero">
+            <div class="hero-content">
+                <span class="eyebrow">We Create Digital Experiences</span>
+                <h1>DESIGN. BUILD. ELEVATE.</h1>
+                <p>NOVA Studio is a creative digital agency crafting beautiful, functional and scalable digital solutions that help brands grow.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn-primary">Explore Our Work</a>
+                    <a href="contact.html" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Architecture & Digital Workspace">
+            </div>
+        </section>
+
+        <!-- Features Strip -->
+        <div class="container">
+            <div class="features-strip">
+                <div class="feature-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div>
+                        <h3>Modern Design</h3>
+                        <p>We design clean, modern and user-friendly interfaces.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <div>
+                        <h3>High Performance</h3>
+                        <p>Fast, optimized and performance-focused code.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-cubes"></i>
+                    <div>
+                        <h3>Scalable Solutions</h3>
+                        <p>Built with scalability and future growth in mind.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                        <h3>Dedicated Support</h3>
+                        <p>We're here to support your business anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="services-section container">
+            <div class="section-header">
+                <div class="section-title">
+                    <span class="section-subtitle">Our Services</span>
+                    <h2>We Provide The Best Digital Solutions</h2>
+                </div>
+                <a href="services.html" class="btn-secondary">View All Services</a>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>High quality, scalable and secure websites.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful and intuitive designs for products.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Branding</h3>
+                    <p>Brand identity that makes you stand out.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategies that grow your brand online.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">
+                        <span class="section-subtitle">Featured Projects</span>
+                        <h2>Our Recent Work</h2>
+                    </div>
+                    <a href="projects.html" class="btn-secondary">View All Projects</a>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="websites">Websites</button>
+                    <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-category="websites">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Fintech Dashboard">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Application</span>
+                            <h3>Fintech Dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="ecommerce">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="NOVA E-Commerce">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">E-Commerce</span>
+                            <h3>NOVA E-Commerce</h3>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="websites">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Travel Explorer">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Website Design</span>
+                            <h3>Travel Explorer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h2>120+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <h2>80+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-box">
+                    <h2>5+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                    <h2>15+</h2>
+                    <p>Team Members</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-title" style="text-align: center; margin-bottom: 50px;">
+                    <span class="section-subtitle">Testimonials</span>
+                    <h2>What Our Clients Say</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"NOVA Studio delivered a stunning website for our business. Their attention to detail and design sense is amazing."</p>
+                        <div class="client-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>CEO, Finova</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Great communication, fast delivery and high quality work. Highly recommended for any digital project."</p>
+                        <div class="client-info">
+                            <h4>David Smith</h4>
+                            <span>Founder, TravelGo</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Professional team with creative ideas. They understood our brand and delivered beyond expectations."</p>
+                        <div class="client-info">
+                            <h4>Ayesha Khan</h4>
+                            <span>Marketing Head, Bloom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta container">
+            <div class="cta-box">
+                <h2>Ready to start your next project?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="contact.html" class="btn-primary">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 16px;">NOVA <span>STUDIO</span></a>
+                    <p>We are a creative digital agency building modern and meaningful digital experiences.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Branding</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-envelope"></i> hello@novastudio.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Sukkur, Pakistan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOVA Studio. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

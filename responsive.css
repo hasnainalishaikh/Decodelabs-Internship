@@ -1,0 +1,242 @@
+/* ==========================================
+   NOVA STUDIO - RESPONSIVE STYLES
+   Single shared source of truth for every breakpoint.
+   Covers: floating navbar, header/logo, hero, features,
+   services, projects, stats, testimonials, about, contact,
+   footer, forms, typography and touch targets.
+   ========================================== */
+
+/* ---------- ~1280px and up (large laptop / desktop) ---------- */
+/* .container already caps at max-width: 1200px in style.css, so
+   large and ultra-wide monitors (1440px, 1920px+) automatically
+   keep the same spacious, centered layout instead of stretching.
+   The floating navbar sizes to its content (width: max-content) so
+   it never needs a fixed desktop width either — see style.css. */
+
+/* ---------- <= 1024px (laptops / large tablets) ---------- */
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .hero p {
+        margin: 0 auto 32px auto;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-image-wrapper img {
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
+
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid--full .project-card {
+        max-width: calc(50% - 15px); /* 2 columns */
+    }
+}
+
+/* ==========================================
+   FLOATING NAVBAR — SINGLE FLUID SHRINK TIER
+   ==========================================
+   style.css forces flex-wrap: nowrap, so the six items (including
+   "Let's Talk") can never drop to a second line — the pill always
+   stays exactly one row. Instead of jumping between fixed-size
+   breakpoints, every sizing property below uses clamp() to scale
+   continuously with the viewport from 320px up to 1023px, at which
+   point it hands off to the normal desktop/tablet sizing in style.css.
+
+   This tier is deliberately larger than the old fixed tiers it
+   replaces (roughly 10-20% up across the board) so the navbar reads
+   as premium rather than compressed, while the low end of each
+   clamp() is still tuned to keep all six items on one row at the
+   narrowest supported width (320px):
+
+     320px  -> compact but clearly readable (~9.5px nav text)
+     375px  -> a bit larger
+     414px  -> comfortable
+     480px  -> a bit more breathing room
+     767px  -> approaching tablet size
+     1023px -> full tablet size (matches the tier above)
+
+   Nothing is ever hidden, clipped, or removed — every item just
+   grows or shrinks in place with the viewport. */
+
+@media (max-width: 1023px) {
+    .floating-navbar {
+        gap: clamp(1px, -0.37px + 0.43vw, 4px);
+        padding: clamp(4px, 2.18px + 0.57vw, 8px);
+    }
+
+    .floating-navbar .nav-item {
+        padding: clamp(8px, 6.18px + 0.57vw, 12px) clamp(3px, -2.92px + 1.85vw, 16px);
+        font-size: clamp(9.5px, 7.45px + 0.64vw, 14px);
+        gap: clamp(2px, 0.18px + 0.57vw, 6px);
+    }
+
+    .floating-navbar .nav-item i {
+        font-size: clamp(9px, 7.18px + 0.57vw, 13px);
+    }
+
+    .floating-navbar .nav-item-cta {
+        margin-left: clamp(1px, -0.37px + 0.43vw, 4px);
+    }
+}
+
+/* ---------- <= 768px (tablets / iPad portrait) — non-navbar rules ---------- */
+@media (max-width: 768px) {
+    .navbar {
+        height: 64px;
+    }
+
+    .hero {
+        padding: 32px 0;
+    }
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .cta-box {
+        padding: 40px 30px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-card {
+        padding: 28px;
+    }
+
+    .services-grid--3col .service-card {
+        max-width: calc(50% - 12px); /* 2 columns */
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+/* ---------- <= 600px (small tablets / large phones) — non-navbar rules ---------- */
+@media (max-width: 600px) {
+    /* Mobile needs slightly more clearance than desktop (navbar sits closer
+       to the edge here — see .floating-navbar bottom offset below), so the
+       footer's reserved bottom padding grows to match: 30px original footer
+       spacing + 96px clearance, same logic as the base rule in style.css. */
+    footer {
+        padding-bottom: calc(126px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .floating-navbar {
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .features-strip {
+        padding: 20px;
+    }
+
+    .service-card {
+        padding: 24px 20px;
+    }
+
+    .filter-buttons {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 7px 16px;
+        font-size: 13px;
+    }
+
+    .services-grid--3col .service-card,
+    .projects-grid--full .project-card {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .cta-box {
+        padding: 30px 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    /* Touch-friendly, zoom-safe form fields (inputs use inline font-size
+       from the original markup, so this needs to win on specificity) */
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 16px !important;
+        padding: 14px !important;
+    }
+}
+
+/* ---------- <= 480px (standard phones) — non-navbar rules ---------- */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 17px;
+    }
+    .logo span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .eyebrow {
+        font-size: 11px;
+    }
+
+    .hero-image-wrapper img {
+        border-radius: 100px 30px 100px 30px;
+    }
+
+    .stats-grid {
+        gap: 20px;
+    }
+    .stat-box h2 {
+        font-size: 32px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-box h2 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — NOVA Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header (logo only — navigation lives in the floating navbar) -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">NOVA <span>STUDIO</span></a>
+        </div>
+    </header>
+
+    <!-- Floating Navbar (shared master implementation — see index.html) -->
+    <nav class="floating-navbar" id="floatingNavbar" aria-label="Primary">
+        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html" class="nav-item active" aria-current="page">About</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+        <a href="contact.html" class="nav-item nav-item-cta">Let's Talk</a>
+    </nav>
+
+    <main>
+        <section class="container" style="padding: 60px 0 20px;">
+            <span class="section-subtitle">Who We Are</span>
+            <h1 style="font-size: 42px; font-weight: 800; margin-top: 8px;">We Are A Creative Digital Agency</h1>
+        </section>
+
+        <section class="container about-intro">
+            <div class="about-intro-grid">
+                <div>
+                    <p style="color: var(--grey-text); margin-bottom: 20px;">NOVA Studio was founded with a single mission: to create beautiful, functional and results-driven digital experiences.</p>
+                    <p style="color: var(--grey-text);">We combine creativity, technology and strategy to build solutions that help brands grow and succeed in the digital world.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Agency Workspace" class="about-intro-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section container">
+            <div class="stats-grid">
+                <div class="stat-box"><h2>120+</h2><p>Projects</p></div>
+                <div class="stat-box"><h2>80+</h2><p>Clients</p></div>
+                <div class="stat-box"><h2>5+</h2><p>Years</p></div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="container" style="padding: 80px 0;">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span class="section-subtitle">Our Team</span>
+                <h2>The Minds Behind NOVA Studio</h2>
+            </div>
+            <div class="team-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Usman Ali" class="team-avatar">
+                    <h3>Usman Ali</h3>
+                    <p style="color: var(--primary); font-size: 13px;">CEO & Founder</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Maira Khan" class="team-avatar">
+                    <h3>Maira Khan</h3>
+                    <p style="color: var(--primary); font-size: 13px;">UI/UX Designer</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Hamza Raza" class="team-avatar">
+                    <h3>Hamza Raza</h3>
+                    <p style="color: var(--primary); font-size: 13px;">Frontend Developer</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Sara Ahmed" class="team-avatar">
+                    <h3>Sara Ahmed</h3>
+                    <p style="color: var(--primary); font-size: 13px;">Project Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta container">
+            <div class="cta-box">
+                <h2>Ready to start your next project?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="contact.html" class="btn-primary">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding: 0; justify-content: center;">
+                <p>&copy; 2026 NOVA Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

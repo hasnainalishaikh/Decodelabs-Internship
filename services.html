@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — NOVA Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header (logo only — navigation lives in the floating navbar) -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">NOVA <span>STUDIO</span></a>
+        </div>
+    </header>
+
+    <!-- Floating Navbar (shared master implementation — see index.html) -->
+    <nav class="floating-navbar" id="floatingNavbar" aria-label="Primary">
+        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="services.html" class="nav-item active" aria-current="page">Services</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+        <a href="contact.html" class="nav-item nav-item-cta">Let's Talk</a>
+    </nav>
+
+    <main>
+        <section class="container" style="padding: 60px 0;">
+            <span class="section-subtitle">What We Do</span>
+            <h1 style="font-size: 42px; font-weight: 800; margin-top: 8px;">We Provide The Best Digital Solutions</h1>
+            <p style="color: var(--grey-text); margin-top: 12px; max-width: 600px;">We help businesses transform and scale their ideas into powerful digital products and experiences.</p>
+        </section>
+
+        <section class="container" style="padding-bottom: 80px;">
+            <div class="services-grid services-grid--3col">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>We build fast, secure and scalable websites and web applications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>We design intuitive and engaging interfaces that delight users.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>Branding</h3>
+                    <p>We create unique brand identities that leave a lasting impression.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven strategies to grow your brand and reach higher in the light audience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your visibility and rank higher on search engines.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Support & Maintenance</h3>
+                    <p>We provide ongoing support and maintenance for your digital project.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta container">
+            <div class="cta-box">
+                <h2>Ready to start your next project?</h2>
+                <p>Let's create something amazing together.</p>
+                <a href="contact.html" class="btn-primary">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border: none; padding: 0; justify-content: center;">
+                <p>&copy; 2026 NOVA Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
