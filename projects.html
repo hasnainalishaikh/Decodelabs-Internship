@@ -3,108 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Projects — NOVA Studio</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
 </head>
+
 <body>
 
     <!-- Header (logo only — navigation lives in the floating navbar) -->
     <header>
         <div class="container navbar">
-            <a href="index.html" class="logo">NOVA <span>STUDIO</span></a>
+            <a href="index.html" class="logo">
+                NOVA <span>STUDIO</span>
+            </a>
         </div>
     </header>
 
-    <!-- Floating Navbar (shared master implementation — see index.html) -->
-    <nav class="floating-navbar" id="floatingNavbar" aria-label="Primary">
-        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i>Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="services.html" class="nav-item">Services</a>
-        <a href="projects.html" class="nav-item active" aria-current="page">Projects</a>
-        <a href="contact.html" class="nav-item">Contact</a>
-        <a href="contact.html" class="nav-item nav-item-cta">Let's Talk</a>
+
+    <!-- Floating Navbar -->
+    <nav
+        class="floating-navbar"
+        id="floatingNavbar"
+        aria-label="Primary"
+    >
+        <a href="index.html" class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+        <a href="about.html" class="nav-item">
+            About
+        </a>
+
+        <a href="services.html" class="nav-item">
+            Services
+        </a>
+
+        <a
+            href="projects.html"
+            class="nav-item active"
+            aria-current="page"
+        >
+            Projects
+        </a>
+
+        <a href="contact.html" class="nav-item">
+            Contact
+        </a>
+
+        <a
+            href="contact.html"
+            class="nav-item nav-item-cta"
+        >
+            Let's Talk
+        </a>
     </nav>
 
+
     <main>
-        <section class="container" style="padding: 60px 0 30px;">
-            <span class="section-subtitle">Our Projects</span>
-            <h1 style="font-size: 42px; font-weight: 800; margin-top: 8px;">Our Work</h1>
+
+        <!-- Page Heading -->
+        <section
+            class="container"
+            style="padding: 60px 0 30px;"
+        >
+            <span class="section-subtitle">
+                Our Projects
+            </span>
+
+            <h1
+                style="
+                    font-size: 42px;
+                    font-weight: 800;
+                    margin-top: 8px;
+                "
+            >
+                Our Work
+            </h1>
         </section>
 
-        <section class="container" style="padding-bottom: 80px;">
+
+        <!-- Project Filters -->
+        <section
+            class="container"
+            style="padding-bottom: 80px;"
+        >
+
             <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="websites">Websites</button>
-                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
-                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="websites"
+                >
+                    Websites
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="ui-ux"
+                >
+                    UI/UX
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="branding"
+                >
+                    Branding
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="ecommerce"
+                >
+                    E-Commerce
+                </button>
+
             </div>
 
-            <div class="projects-grid projects-grid--full">
-                <div class="project-card" data-category="websites">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Fintech Dashboard"></div>
-                    <div class="project-info">
-                        <span class="project-category">Web Application</span>
-                        <h3>Fintech Dashboard</h3>
-                    </div>
-                </div>
-                <div class="project-card" data-category="ecommerce">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="NOVA E-Commerce"></div>
-                    <div class="project-info">
-                        <span class="project-category">E-Commerce Website</span>
-                        <h3>NOVA E-Commerce</h3>
-                    </div>
-                </div>
-                <div class="project-card" data-category="websites">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Travel Explorer"></div>
-                    <div class="project-info">
-                        <span class="project-category">Website Design</span>
-                        <h3>Travel Explorer</h3>
-                    </div>
-                </div>
-                <div class="project-card" data-category="ui-ux">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80" alt="Nike Redesign"></div>
-                    <div class="project-info">
-                        <span class="project-category">UI/UX Design</span>
-                        <h3>Nike Redesign</h3>
-                    </div>
-                </div>
-                <div class="project-card" data-category="branding">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=600&q=80" alt="Brand Identity"></div>
-                    <div class="project-info">
-                        <span class="project-category">Branding</span>
-                        <h3>Brand Identity</h3>
-                    </div>
-                </div>
-                <div class="project-card" data-category="websites">
-                    <div class="project-img"><img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=600&q=80" alt="Coffee Shop"></div>
-                    <div class="project-info">
-                        <span class="project-category">Website Design</span>
-                        <h3>Coffee Shop</h3>
-                    </div>
-                </div>
+
+            <!-- Projects are loaded from Backend API -->
+            <div
+                class="projects-grid projects-grid--full"
+                id="projectsGrid"
+            >
+                <p id="projectsLoading">
+                    Loading projects...
+                </p>
             </div>
+
         </section>
 
+
+        <!-- Final CTA -->
         <section class="final-cta container">
+
             <div class="cta-box">
-                <h2>Ready to start your next project?</h2>
-                <p>Let's create something amazing together.</p>
-                <a href="contact.html" class="btn-primary">Get In Touch</a>
+
+                <h2>
+                    Ready to start your next project?
+                </h2>
+
+                <p>
+                    Let's create something amazing together.
+                </p>
+
+                <a
+                    href="contact.html"
+                    class="btn-primary"
+                >
+                    Get In Touch
+                </a>
+
             </div>
+
         </section>
+
     </main>
 
+
+    <!-- Footer -->
     <footer>
+
         <div class="container">
-            <div class="footer-bottom" style="border: none; padding: 0; justify-content: center;">
-                <p>&copy; 2026 NOVA Studio. All rights reserved.</p>
+
+            <div
+                class="footer-bottom"
+                style="
+                    border: none;
+                    padding: 0;
+                    justify-content: center;
+                "
+            >
+
+                <p>
+                    &copy; 2026 NOVA Studio.
+                    All rights reserved.
+                </p>
+
             </div>
+
         </div>
+
     </footer>
 
+
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
